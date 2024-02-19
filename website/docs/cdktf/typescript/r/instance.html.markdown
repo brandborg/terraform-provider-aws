@@ -486,6 +486,7 @@ This resource exports the following attributes in addition to the arguments abov
 
 * `arn` - ARN of the instance.
 * `capacityReservationSpecification` - Capacity reservation specification of the instance.
+* `id` - ID of the instance.
 * `instanceState` - State of the instance. One of: `pending`, `running`, `shutting-down`, `terminated`, `stopping`, `stopped`. See [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) for more information.
 * `outpostArn` - ARN of the Outpost the instance is assigned to.
 * `passwordData` - Base-64 encoded encrypted password data for the instance. Useful for getting the administrator password for instances running Microsoft Windows. This attribute is only exported if `getPasswordData` is true. Note that this encrypted value will be stored in the state file, as with all exported attributes. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
@@ -545,4 +546,4 @@ Using `terraform import`, import instances using the `id`. For example:
 % terraform import aws_instance.web i-12345678
 ```
 
-<!-- cache-key: cdktf-0.20.1 input-bc21ff879c5753aa1178d8dc97410b19bac08580623819a9f72bec8dedbdf25a -->
+<!-- cache-key: cdktf-0.20.1 input-d8aa866ec3601422cc3ea4b6b03fbc6280e94e6d9ff5385f91123e703b1dc79b -->
